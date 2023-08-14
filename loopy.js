@@ -1,17 +1,13 @@
-var x = 100;
-
-// while loop with a stop condition
-while (x >= 100 && x <= 200) {
-    if (x % 3 === 0 && x % 4 === 0) {
-        console.log("LoopyLighthouse");
-    }else if (x % 3 === 0) {
-        console.log("Loopy");
-    }else if (x % 4 === 0) {
-        console.log("Lighthouse");
+function loopyLighthouse(range, multiples, words) {
+    for(let i = range[0]; i <= range[1]; i++){
+      if (i % multiples[0] === 0 && i % multiples[1] === 0) {
+        console.log(words[0] + words[1]);
+      } else if (i % multiples[0] === 0) {
+        console.log(words[0]);
+      } else if (i % multiples[1] === 0) {
+        console.log(words[1]);
+      } else {
+        console.log(i);
+      }
     }
-    else {
-        console.log(x);
-    }
-    // increment x at the end of each loop
-    x = x + 1 ; 
-}
+  }

@@ -1,4 +1,4 @@
-const temparature = -12;
+const temparature = 45;
 
 if (temparature < 0) {
   console.log("Make sure you pick out a scarf!");
@@ -9,3 +9,4 @@ if (temparature < 0) {
 }
 
 console.log("Now you're ready to go outside!")
+
